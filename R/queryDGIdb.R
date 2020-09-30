@@ -132,7 +132,7 @@ queryDGIdb <- function(genes,
 # long list of genes to be queried.
 queryDgidbPost <- function(genes, interactionSources, geneCategories,
             interactionTypes) {
-    url <- "http://dgidb.genome.wustl.edu/api/v1/interactions.json"
+    url <- "https://dgidb.org/api/v2/interactions.json"
     body <- list(genes = paste(genes, collapse = ","),
                     interaction_sources = interactionSources,
                     gene_categories = geneCategories,
